@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "config:base",
+    // https://docs.renovatebot.com/presets-docker/
+    "docker:enableMajor"
+  ],
+  "timezone": "Asia/Tokyo",
+  "automerge": false,
+  "dependencyDashboard": false,
+  //"prHourlyLimit": 0,
+  //"prConcurrentLimit": 0,
+  "labels": ["renovate"],
+  "packageRules": [
+    // https://developer.hatenastaff.com/entry/2020/06/19/113030
+    {
+      "packagePatterns": ["^@types/"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}
