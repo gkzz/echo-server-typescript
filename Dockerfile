@@ -1,4 +1,4 @@
-FROM node:16.15.0-slim AS base
+FROM node:16.15.1-slim AS base
 
 USER root
 
@@ -12,7 +12,7 @@ COPY tsconfig.json .
 COPY src src
 RUN npm run build
 
-FROM node:16.15.0-slim AS dev
+FROM node:16.15.1-slim AS dev
 WORKDIR /app
 COPY --from=base /app/node_modules ./node_modules
 COPY --from=base /app/dist ./dist
