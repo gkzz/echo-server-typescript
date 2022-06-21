@@ -18,6 +18,11 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "groupName": "npm-group",
+      "matchManagers": ["npm"],
+      "separateMajorMinor": false,
     }
   ]
 }
