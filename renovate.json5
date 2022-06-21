@@ -20,9 +20,9 @@
       }
     },
     {
-      "groupName": "npm-group",
+      "groupName": "npm-group-separateMajorMinor-true",
       "matchManagers": ["npm"],
-      "separateMajorMinor": false,
+      "separateMajorMinor": true,
     }
   ]
 }
