@@ -6,7 +6,7 @@
   ],
   "timezone": "Asia/Tokyo",
   "automerge": false,
-  "dependencyDashboard": false,
+  //"dependencyDashboard": false,
   //"prHourlyLimit": 0,
   //"prConcurrentLimit": 0,
   "labels": ["renovate"],
@@ -20,9 +20,9 @@
       }
     },
     {
-      "groupName": "npm-group-separateMajorMinor-true",
+      "groupName": "npm-group-separateMajorMinor-false",
       "matchManagers": ["npm"],
-      "separateMajorMinor": true,
+      "separateMajorMinor": false,
     }
   ]
 }
